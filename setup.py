@@ -10,5 +10,8 @@ setup(name='pjg_sound',
       author='Ethan Cowan',
       author_email='ethanc@poeticjustice.group',
       url='',
+      install_requires=[
+            'pydub'
+      ],
       packages=find_packages(exclude=['tests']),
 )
