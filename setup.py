@@ -10,5 +10,5 @@ setup(name='pjg_sound',
       author='Ethan Cowan',
       author_email='ethanc@poeticjustice.group',
       url='',
-      packages=find_packages(),
+      packages=find_packages(exclude=['tests']),
 )
