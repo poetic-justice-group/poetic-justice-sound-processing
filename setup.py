@@ -11,7 +11,8 @@ setup(name='pjg_sound',
       author_email='ethanc@poeticjustice.group',
       url='',
       install_requires=[
-            'pydub'
+            'pydub',
+            'scipy',
       ],
       packages=find_packages(exclude=['tests']),
 )

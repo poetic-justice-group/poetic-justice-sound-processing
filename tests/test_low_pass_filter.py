@@ -5,7 +5,7 @@ from unittest import TestCase
 
 from pydub import AudioSegment
 
-from sound.low_pass_filter import LowPassFilter
+from pjg_sound.low_pass_filter import LowPassFilter
 
 
 class TestLowPassFilter(TestCase):
