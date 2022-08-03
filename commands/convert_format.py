@@ -1,7 +1,7 @@
 import argparse
 import os
 
-from sound.audio_io import AudioWriter, AudioReader
+from pjg_sound.audio_io import AudioWriter, AudioReader
 
 
 def convert_format(audio_file_path, new_file_format):

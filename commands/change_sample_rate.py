@@ -1,8 +1,8 @@
 import argparse
 import os
 
-from sound.audio_io import AudioWriter, AudioReader
-from sound.sample_rate_changer import SampleRateChanger
+from pjg_sound.audio_io import AudioWriter, AudioReader
+from pjg_sound.sample_rate_changer import SampleRateChanger
 
 
 def change_sample_rate(audio_file_path, sample_rate):

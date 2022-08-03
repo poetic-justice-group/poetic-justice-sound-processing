@@ -1,7 +1,7 @@
 import argparse
 
-from sound.audio_io import AudioWriter, AudioReader
-from sound.noise_reduction import NoiseReducer
+from pjg_sound.audio_io import AudioWriter, AudioReader
+from pjg_sound.noise_reduction import NoiseReducer
 
 
 def noise_reduction(audio_file_path):
