@@ -11,6 +11,7 @@ setup(name='pjg_sound',
       author_email='ethanc@poeticjustice.group',
       url='',
       install_requires=[
+            'noisereduce',
             'pydub',
             'scipy',
       ],
