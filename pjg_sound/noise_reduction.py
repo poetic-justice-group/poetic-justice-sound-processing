@@ -6,16 +6,18 @@ import os
 from scipy.io import wavfile
 from pydub import AudioSegment
 
+from pjg_sound.base_processor import BaseSoundProcessor
+
 logger = logging.getLogger(__file__)
 
 
-class NoiseReducer(object):
+class NoiseReducer(BaseSoundProcessor):
 
     def __init__(self, audio_segment, sample_rate=None):
         # self.data = data
         self.sample_rate = sample_rate if sample_rate else audio_segment.frame_rate
-        self.audio_segment = audio_segment
         self.data_with_reduced_noise = None
+        super().__init__(audio_segment)
 
     def reduce_noise(self):
         self.data_with_reduced_noise = nr.reduce_noise(y=self.audio_segment.get_array_of_samples(),
