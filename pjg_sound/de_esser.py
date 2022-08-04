@@ -6,6 +6,7 @@ from pjg_sound.base_processor import BaseSoundProcessor
 class DeEsser(BaseSoundProcessor):
     """
     Remove "sibilant" consonants like S
+    Inspired by https://gist.github.com/sveitser/aa95f9df7a0a5d8f7f678d681f9da12f
     (https://en.wikipedia.org/wiki/De-essing)
     """
 
